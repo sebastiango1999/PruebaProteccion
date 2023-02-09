@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="prueba.css">
+    <link rel="icon" href="logoPestaña.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Protección</title>
+</head>
+<body>
+  
+  <header>
+    <img src="logoProteccion.png" alt="Logo de proteccion" style="width:10%">
+  </header>
+
+
+
+  <div id="clock"></div>
+    <div id="contenedorPadre">
+      
+      <div id="contenedorHijo" style="flex: 1;">
+        <div style="display: flex; flex-direction: column; align-items: left; ">
+         
+          <div style="display: flex; align-items: center;">
+           
+            <button type="button" id="parametro" class="btn btn-primary">Ejecutar</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="contenedorHijo" style="flex: 2; align-items:center ">
+        <button type="button" id="limpiar" class="btn btn-secondary" onclick="limpiar()" >Limpiar pantalla</button>
+
+        <button type="button"  class="btn btn-ligh"  id ="botonesInvisibles1" ></button>
+        <button type="button"  class="btn btn-ligh"  id ="botonesInvisibles2" ></button>
+        
+        <div id="resultado">
+
+          
+          
+          
+
+        </div>
+
+      </div>
+    </div>
+
+
+    
+  
+  
+  <footer>
+    Sebastian Gomez Osorio
+  </footer>
+  
+  <style>
+    @media (max-width: 768px) {
+      #contenedorPadre {
+        flex-direction: column;
+      }
+      #contenedorHijo {
+        margin: 10px 0;
+      }
+    }
+  </style>
+    
+
+<script src="prueba.js"></script>     
+</body>
+</html>
